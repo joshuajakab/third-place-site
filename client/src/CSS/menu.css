@@ -1,0 +1,27 @@
+#menu-page-one {
+    width: 100%;
+}
+
+#menu-page-two {
+    width: 100%;
+}
+
+#brunch-menu {
+    width: 50%;
+}
+
+@media screen and (max-width: 800px){
+    #menu-page-one {
+        width: 100%;
+    }
+    
+    #menu-page-two {
+        width: 100%;
+    }
+
+    #brunch-menu {
+        width: 100%;
+    }
+    
+}
+

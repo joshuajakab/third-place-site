@@ -1,0 +1,66 @@
+.side-drawer {
+    height: 100%;
+    background-color: rgba(255, 153, 51, 1);
+    box-shadow: 2px 0px 5px rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40%;
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-drawer ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.side-drawer li {
+    margin: 0.5rem 0;
+}
+
+.side-drawer a {
+    background-color: rgba(255, 153, 51, 1);
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;;
+    font-family: KOMIKAX;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    border-radius: 5%;
+    text-align: center;
+    width: 80%;
+    margin: .5rem 1.5rem;
+}
+
+.side-drawer a:active {
+    color: white;
+}
+
+#phone-number-button {
+    background-color: rgb(51, 153, 51, 1);
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;;
+    font-family: KOMIKAX;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    border: none;
+    width: 100%;
+    margin: .5rem 1rem;
+    border-radius: 0;
+    width: 100%;
+    margin: 1rem 0rem;
+    
+}
+
+@media screen and (max-width: 800px) {
+    .side-drawer {
+        width: 75%;
+    }
+}

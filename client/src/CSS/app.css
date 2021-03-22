@@ -1,0 +1,213 @@
+@font-face {
+    font-family: 'KOMIKAX';
+    src: local('KOMIKAX'), url(../Fonts/KOMIKAX.ttf) format('truetype');
+  }
+
+.App {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 1rem;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+.header {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 0;
+    grid-row-end: 1;
+    width: 250%;
+    display: flex;
+    margin-top: 5%;
+    position: relative;
+}
+
+#image-container {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+#buttons {
+    grid-column: 1/7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+#phone-number-button {
+    width: 30vw;
+    background-color: rgba(42, 164, 73, .6);
+    border: 5px solid black;
+    border-radius: 25px;
+    padding: 3%;
+    cursor: pointer;
+    
+}
+
+
+
+/*-----------------------Images----------------------*/
+
+#third-place-logo {
+    width: 40%;
+    align-self: center;
+    box-shadow: 0px 0px 20px rgb(36, 35, 35);
+}
+
+#the-lounge-img {
+    width: 150%;  
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-radius: 25px;  
+    margin: 3% 0% 5% 5%;
+    cursor: pointer;
+}
+
+
+#third-place-img {
+    width: 148%;  
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-radius: 25px;
+    margin: 3% 0% 5% 5%;
+    cursor: pointer;
+}
+
+
+#stevies-img {
+    width: 200%;   
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-radius: 25px;
+    margin: 3% 0% 5% 5%;
+    cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    
+
+.App {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-gap: 1rem; 
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll; 
+}
+
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2; 
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    position: relative;
+}
+
+#image-container {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 5; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 10%;
+}
+
+#buttons {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+
+
+
+/*-----------------------Images----------------------*/
+
+#third-place-logo {
+    width: 90%;
+    align-self: center;
+    box-shadow: 0px 0px 20px rgb(36, 35, 35);
+}
+
+#the-lounge-img {
+    width: 60%;  
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-radius: 25px;  
+    margin: 10% 5%;
+}
+
+#third-place-img {
+    width: 60%;  
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-radius: 25px;
+    margin: 10% 5%;
+}
+
+
+#stevies-img {
+    width: 60%;   
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-radius: 25px;
+    margin: 10% 5%;
+}
+
+
+
+
+
+
+}
