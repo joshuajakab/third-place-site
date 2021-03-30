@@ -3,16 +3,22 @@
     src: local('KOMIKAX'), url(../Fonts/KOMIKAX.ttf) format('truetype');
   }
 
-.App {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto auto auto auto;
-    grid-gap: 1rem;
+.home {
     background-size: 100%;
     width: 100%;
     height: 100%;
     overflow: hidden;
     overflow-y: scroll;
+}
+
+#mainContainer {
+    min-height: 100vh;
+    margin: 0;
+}
+
+#content {
+    height: 100%;
+    margin: 0;
 }
 
 video {
@@ -22,13 +28,10 @@ video {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 0;
   }
 
 .header {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 0;
-    grid-row-end: 1;
     width: 250%;
     display: flex;
     margin-top: 5%;
@@ -36,19 +39,15 @@ video {
 }
 
 #image-container {
-    grid-column-start: 1;
-    grid-column-end: 7;
-    grid-row-start: 1;
-    grid-row-end: 2;
     display: flex;
+    flex-direction: row;
+    align-content: center;
     justify-content: space-around;
     position: relative;
+   margin-top: 5%;
 }
 
 #buttons {
-    grid-column: 1/7;
-    grid-row-start: 2;
-    grid-row-end: 3;
     z-index: 5;
     width: 100%;
     height: 100%;
@@ -113,11 +112,8 @@ video {
 @media screen and (max-width: 800px) {
     
 
-.App {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto auto auto auto auto auto;
-    grid-gap: 1rem; 
+.home {
+    display: flex;
     background-size: 100%;
     width: 100%;
     height: 100%;
@@ -132,13 +128,10 @@ video {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 0;
   }
 
 .header {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2; 
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -147,22 +140,16 @@ video {
 }
 
 #image-container {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 5; 
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    margin-top: 10%;
+    justify-content: flex-start;
+    margin-top: 15%;
+    height: 100%;
+    width: 100%;
 }
 
-#buttons {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 5;
-    grid-row-end: 6; 
+#buttons { 
     display: flex;
     flex-direction: column;
     align-items: center;
